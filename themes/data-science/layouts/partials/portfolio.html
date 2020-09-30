@@ -63,7 +63,7 @@
     <div class="portfolio__grid">
 
       <!-- Change the range number here to affect the maximum number of items in your grid -->
-      {{ range first 50 (where .Site.RegularPages "Section" "post") }}
+      {{ range first 25 (where .Site.RegularPages "Section" "post") }}
         <div class="item {{ range .Params.categories }}{{ . }}{{ end }}" data-tags="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
           <a class="item__link" href="{{ .RelPermalink }}">
             {{ if .Params.thumbnail }}
