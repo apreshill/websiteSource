@@ -35,8 +35,9 @@ preserveTaxonomyNames = true
   highlightjsThemeLight = ""
   highlightjsThemeDark = ""
 
-
-
+  # Link custom CSS assets
+  #   (relative to /static/css)
+  custom_css = ["rmd.css"]
 
 
 [params.social]
