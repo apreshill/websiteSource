@@ -14,6 +14,11 @@
   <link rel="stylesheet" type="text/css" href="{{ "css/variables.css" | relURL }}">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,700|Noto+Sans:400,700" rel="stylesheet">
 
+<!-- allows users to layer custom css files-->
+{{ range .Site.Params.custom_css }}
+  <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+{{ end }}
+
  <!-- Set a scratch value of highlight_enabled based on whether the "highlight" param is set to true or false -->
 
   {{ if isset .Site.Params "highlight" }}
