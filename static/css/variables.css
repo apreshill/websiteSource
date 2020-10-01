@@ -19,7 +19,7 @@ body.light{
   --content: #1A2849; /* dark blue */
   --tertiary: #696E84; /* mid blue */
   --page: #e6f3fc; /* icy blue */
-  --drawer: #F4BAB7;
+  --drawer: #79beee; /* bright blue */
   --mainShadow: 0px 2px 3px rgba(121, 190, 238, 0.3);
   --mainShadowHover: 0px 10px 20px rgba(121, 190, 238, 0.2);
   --elevation: #f8fbfe; /* very light blue */
